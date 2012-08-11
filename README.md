@@ -1,1 +1,1 @@
-###*<center>rsync? No, not heard.</center>*###
+###*rsync? No, not heard.*###

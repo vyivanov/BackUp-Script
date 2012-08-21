@@ -18,13 +18,13 @@ echo "Checking TAR..."
 tar -vtf ${backup_filename} >> ${backup_filename}.log
 
 echo "Feeding BackUp Server..."
-mv ${backup_filename} ${dst_dir} > /dev/null
+mv ${backup_filename} ${dst_dir} &> /dev/null
 
 echo "Deleted BackUp file: ${current_backup}" >> ${backup_filename}.log
 rm "${dst_dir}/${current_backup}"
 rm "${dst_dir}/${current_backup}.log"
 
 echo "BackUp End:" $(date +%c) >> ${backup_filename}.log
-mv ${backup_filename}.log ${dst_dir} > /dev/null
+mv ${backup_filename}.log ${dst_dir} &> /dev/null
 
 echo "BackUp Finished."

@@ -12,7 +12,7 @@ echo "BackUp Started..."
 echo "BackUp Start:" $(date +%c) >> ${backup_filename}.log
 
 echo "TARing Folders..."
-tar -cvf ${backup_filename} BackUp-Script/ CV/ Eagle-Linux-Setup-Solution/ eclipse-workspace/ FileStore/ projects/ Reading/ Recipes/ KeePassDB.BackUp.2012-08-13.kdbx >> ${backup_filename}.log
+tar -cvf ${backup_filename} BackUp-Script/ Bash-Aliases/ CV/ DVCS-Bash-Config/ Eagle-Linux-Setup-Solution/ eclipse-workspace/ FileStore/ projects/ Reading/ Recipes/ The-C-Programming-Language/ KeePassDB.BackUp.2012-08-13.kdbx >> ${backup_filename}.log
 
 echo "Checking TAR..."
 tar -vtf ${backup_filename} >> ${backup_filename}.log
